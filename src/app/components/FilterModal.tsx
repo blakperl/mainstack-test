@@ -19,8 +19,8 @@ type FilterModalProps = {
 };
 
 const FilterModal = ({ isVisible, close, applyFilters }: FilterModalProps) => {
-  const [startDate, setStartDate] = useState<dayjs.Dayjs | null>(dayjs());
-  const [endDate, setEndDate] = useState<dayjs.Dayjs | null>(dayjs());
+  const [startDate, setStartDate] = useState<dayjs.Dayjs | null>(null);
+const [endDate, setEndDate] = useState<dayjs.Dayjs | null>(null);
   const [transactionType, setTransactionType] = useState<string[]>([]);
   const [transactionStatus, setTransactionStatus] = useState<string[]>([]);
   const [openStartDate, setOpenStartDate] = useState(false);
@@ -35,8 +35,8 @@ const FilterModal = ({ isVisible, close, applyFilters }: FilterModalProps) => {
   };
 
   const clearFilters = () => {
-    setStartDate(dayjs());
-    setEndDate(dayjs());
+    setStartDate(null);
+    setEndDate(null);
     setTransactionType([]);
     setTransactionStatus([]);
   };
