@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+ :root {
+  --background: #ffffff;
+  --foreground: #171717;
+  font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: max(calc(16 * (100vw / 1920)), 16px);
+    @apply text-[#56616B];
+  }
+}
+@layer components {
+  .container {
+    @apply max-w-[95%] lg:max-w-[90%] mx-auto px-4;
+    max-width: 90rem;
+  }
+  .title {
+    @apply font-sans font-medium text-lg text-[#131316] lg:text-[2.5rem] lg:leading-[3rem] md:text-[1.5rem];
+  }
+  .filled-button {
+    @apply border bg-[#131316] rounded-full text-white;
+  }
+  .outlined-button {
+    @apply bg-[#EFF1F6]  rounded-full text-[#131316];
+  }
+
+
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.MuiTextField {
+  background-color: #EFF1F6; 
+  border:0;
+  border-radius: 12px;
+}
+.MuiTextField-root {
+  background-color: #EFF1F6; 
+  border:0 !important;
+  border-radius: 12px !important;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 12px;
+  border: 0; 
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border: 0;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 2px solid black !important;
+  border-radius: 12px !important;
+}
+
+.MuiSelect-root {
+  background-color: #EFF1F6;
+  border: none !important; 
+  border-radius: 12px !important;
+}
+
+.MuiSelect-root .MuiOutlinedInput-notchedOutline {
+  border: none; 
+  border-radius: 12px !important; 
+}
+
+.MuiSelect-root:hover .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 2px solid black !important;
+  border-radius: 12px !important;
+}
+
+
+.MuiDatePicker-root .MuiTextField-root {
+  background-color: #EFF1F6;
+  border: none !important; 
+  border-radius: 12px !important;
+}
+
+.MuiDatePicker-root .MuiOutlinedInput-root {
+  border: none; 
+  border-radius: 12px !important; 
+}
+
+.MuiDatePicker-root .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.MuiDatePicker-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 2px solid black !important; 
+  border-radius: 12px !important;
+}
+
+.css-jupps9-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 12px !important; 
+}
+
+.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  border-radius: 12px !important; 
+  border: 1px
+}
